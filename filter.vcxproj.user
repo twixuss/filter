@@ -5,11 +5,11 @@
     <RemoteDebuggerCommandArguments>dilate 10 output.png input.png</RemoteDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerCommandArguments>input.png output.png dilate 10</LocalDebuggerCommandArguments>
-    <RemoteDebuggerCommandArguments>input.png output.png dilate 10</RemoteDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>input.png output.png median radius 16 percent 50</LocalDebuggerCommandArguments>
+    <RemoteDebuggerCommandArguments>input.png output.png median radius 16 percent 50</RemoteDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LocalDebuggerCommandArguments>input.png output.png dilate radius 16 distance manhattan</LocalDebuggerCommandArguments>
-    <RemoteDebuggerCommandArguments>input.png output.png dilate radius 16 distance manhattan</RemoteDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>input.png output.png dilate</LocalDebuggerCommandArguments>
+    <RemoteDebuggerCommandArguments>input.png output.png dilate</RemoteDebuggerCommandArguments>
   </PropertyGroup>
 </Project>
